@@ -1,0 +1,68 @@
+header{
+  background: #d9b67b;
+  padding: 20px;
+}
+
+footer{
+  background: #d9b67b;
+  padding: 10px;
+  text-align: center;
+}
+
+.content{
+  width: 1000px;
+  margin: auto;
+}
+
+nav{
+  background: #000561;
+  padding: 10px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  margin-right: 20px;
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+main{
+  padding: 20px;
+}
+
+.list{
+  display: flex;
+  margin: 0 -10px;
+}
+
+.list section{
+  flex: 1;
+  border: solid 1px #666;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding-bottom: 20px;
+}
+
+.list h2,
+.list p{
+  padding: 0 20px;
+}
+
+.list h2{
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.list section img{
+  width: 100%;
+}
