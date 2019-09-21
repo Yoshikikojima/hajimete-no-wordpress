@@ -32,5 +32,6 @@
 
 ## 関連リンク
 
+- [1-2. Visual Studio Code のインストールと初期設定](https://chot.design/html-css-beginner/0c671658ddce/)
 - [ress](https://github.com/filipelinhares/ress)
 - [O-DAN](http://o-dan.net/ja/)
