@@ -19,8 +19,27 @@ body{
   display: flex;
 }
 
+@media (max-width: 764px){
+  .flexbox{
+    flex-direction: column;
+  }
+}
+
 .text-center{
   text-align: center;
+}
+
+.sp-only{
+  display: none;
+}
+
+@media (max-width:764px){
+  .pc-only{
+    display: none;
+  }
+  .sp-only{
+    display: block;
+  }
 }
 
 /* layout */
@@ -45,8 +64,78 @@ header nav li{
   margin-left: 10px;
 }
 
+@media (max-width:1200px){
+  header{
+    padding: 20px 10px;
+  }
+  header h1{
+    height: 25px;
+  }
+  header img{
+    width: auto;
+    height: 25px;
+    vertical-align: top;
+  }
+  header > .flexbox{
+    flex-direction: row;
+  }
+}
+
 .global-nav{
   background: #bc1f29;
+}
+
+.sp-menu{
+  display: none;
+}
+
+@media (min-width:768px){
+  .sp-menu{
+    display: none !important;
+  }
+}
+
+.sp-menu li a{
+  display: block;
+  background: #bc1f29;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: solid 1px #8c1717;
+  padding: 1rem;
+  transition: 300ms;
+}
+
+.sp-menu li a:hover{
+  background: #8c1717;
+}
+
+.sp-menu-social{
+  text-align: center;
+  background: #bc1f29;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.sp-menu-social a{
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: solid 1px #8c1717;
+  background: #8c1717;
+  padding: 1px;
+  margin: 0 10px;
+  transition: 300ms;
+}
+
+.sp-menu-social a:hover{
+  transform: scale(1.2);
+}
+
+.sp-menu-social a img{
+  width: 28px;
+  height: auto;
 }
 
 main .container{
@@ -151,6 +240,12 @@ main h2{
   margin: -10px;
 }
 
+@media (max-width: 764px){
+  .card-group{
+    flex-direction: column;
+  }
+}
+
 .btn{
   color: #fff;
   text-decoration: none;
@@ -163,4 +258,45 @@ main h2{
 
 .btn:hover{
   background: #8c1717;
+}
+
+@media (max-width: 764px){
+  iframe{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.menu-btn{
+  width: 25px;
+  height: 20px;
+  border-width: 2px 0 2px;
+  border-color: #bc1f29;
+  border-style: solid;
+  position: relative;
+  margin-right: 4px;
+}
+
+.menu-btn.open{
+  border-color: #fff;
+}
+
+.menu-btn::before,
+.menu-btn::after{
+  display: block;
+  content: "";
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  top: 7px;
+  background: #bc1f29;
+  transition: 300ms;
+}
+
+.menu-btn.open::before{
+  transform: rotate(-45deg);
+}
+
+.menu-btn.open::after{
+  transform: rotate(45deg);
 }

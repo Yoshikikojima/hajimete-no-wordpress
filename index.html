@@ -14,7 +14,8 @@
   <header>
     <div class="container flexbox">
       <h1><img src="logo.png" alt="ヤバイタピオカ屋さん"></h1>
-      <nav class="sub-nav">
+      <a id="openMenu" href="#" class="menu-btn sp-only"></a>
+      <nav class="sub-nav pc-only">
         <ul class="flexbox">
           <li><a href="#"><img src="icon-facebook.png" alt="Facebook" width="32" height="32"></a></li>
           <li><a href="#"><img src="icon-twitter.png" alt="Twitter" width="32" height="32"></a></li>
@@ -22,7 +23,7 @@
       </nav>
     </div>
   </header>
-  <nav class="global-nav">
+  <nav class="global-nav pc-only">
     <div class="container">
       <ul class="flexbox">
         <li><a href="#">ABOUT</a></li>
@@ -31,6 +32,19 @@
         <li><a href="#">RECRUIT</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
+    </div>
+  </nav>
+  <nav id="menu" class="sp-only sp-menu">
+    <ul>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">MENU</a></li>
+      <li><a href="#">STORE</a></li>
+      <li><a href="#">RECRUIT</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <div class="sp-menu-social">
+      <a href="#"><img src="icon-facebook.png" alt="Facebook" width="32" height="32"></a>
+      <a href="#"><img src="icon-twitter.png" alt="Twitter" width="32" height="32"></a>
     </div>
   </nav>
   <main>
@@ -104,6 +118,8 @@
       <small>&copy; 2019 ヤバイタピオカ屋さん</small>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
