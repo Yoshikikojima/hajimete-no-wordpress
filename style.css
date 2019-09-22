@@ -1,68 +1,166 @@
-header{
-  background: #d9b67b;
-  padding: 20px;
+/* reset */
+
+ul,li{
+  list-style: none;
 }
 
-footer{
-  background: #d9b67b;
-  padding: 10px;
-  text-align: center;
+/* common */
+
+body{
+  background: #eae9e8;
 }
 
-.content{
-  width: 1000px;
+.container{
+  max-width: 1200px;
   margin: auto;
 }
 
-nav{
-  background: #000561;
-  padding: 10px;
-}
-
-nav ul{
+.flexbox{
   display: flex;
 }
 
-nav li{
-  margin-right: 20px;
+.text-center{
+  text-align: center;
 }
 
-nav a{
+/* layout */
+
+header{
+  background: #fff;
+  padding: 20px 0;
+}
+
+header > .flexbox{
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1{
+  margin: 0;
+  height: 40px;
+}
+
+header nav li{
+  height: 32px;
+  margin-left: 10px;
+}
+
+.global-nav{
+  background: #bc1f29;
+}
+
+main .container{
+  background: #fff;
+  padding-bottom: 4rem;
+}
+
+main article{
+  padding: 2rem;
+}
+
+.kv img{
+  max-width: 100%;
+}
+
+footer .container{
+  background: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: solid 1px #eee;
+}
+
+
+/* components */
+
+.global-nav a{
   color: #fff;
   text-decoration: none;
+  display: block;
+  padding: 12px 20px;
 }
 
-nav a:hover{
-  text-decoration: underline;
+.global-nav a:hover{
+    background: #8c1717;
 }
 
-main{
-  padding: 20px;
+.sub-nav a{
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #bc1f29;
 }
 
-.list{
-  display: flex;
-  margin: 0 -10px;
+.sub-nav a:hover{
+  background: #8c1717;
 }
 
-.list section{
+main h2{
+  font-family: serif;
+  text-align: center;
+  color: #8c1717;
+  margin-bottom: 2rem;
+}
+
+.table{
+  max-width: 800px;
+  margin: auto;
+}
+
+.table dt{
+  font-weight: bold;
+}
+
+.table dt{
+  margin-bottom: 5px;
+}
+
+.table dd{
+  margin-bottom: 10px;
+}
+
+.table a{
+  color: #bc1f29;
+}
+
+.table a:hover{
+  color: #8c1717;
+}
+
+.card{
   flex: 1;
-  border: solid 1px #666;
-  border-radius: 5px;
-  margin: 0 10px;
-  padding-bottom: 20px;
+  margin: 10px;
+  border: solid 1px #eee;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
-.list h2,
-.list p{
-  padding: 0 20px;
-}
-
-.list h2{
-  margin-top: 0;
-  padding-top: 20px;
-}
-
-.list section img{
+.card-img-top{
   width: 100%;
+}
+
+.card-title{
+  margin: 1rem;
+}
+
+.card-text{
+  margin: 0 1rem 1rem;
+}
+
+.card-group{
+  display: flex;
+  margin: -10px;
+}
+
+.btn{
+  color: #fff;
+  text-decoration: none;
+  background: #bc1f29;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 3px;
+  margin: 2rem;
+}
+
+.btn:hover{
+  background: #8c1717;
 }
