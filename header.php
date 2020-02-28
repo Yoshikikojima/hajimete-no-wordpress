@@ -19,8 +19,7 @@
 
   <header>
     <div class="container flexbox">
-      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
-            src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="ヤバイタピオカ屋さん"></a></h1>
+      <div class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">はじめてのWordPress</a></div>
       <a id="openMenu" href="#" class="menu-btn sp-only"></a>
       <nav class="sub-nav pc-only">
         <ul class="flexbox">

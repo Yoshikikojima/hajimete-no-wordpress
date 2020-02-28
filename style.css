@@ -1,226 +1,231 @@
 /*
-Theme Name: ヤバイタピオカ屋さん
+Theme Name: first theme
 */
 
 /* reset */
 
-ul,li{
+ul,
+li {
   list-style: none;
 }
 
 /* common */
 
-body{
-  background: #eae9e8;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+body {
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: auto;
 }
 
-.flexbox{
+.flexbox {
   display: flex;
 }
 
-@media (max-width: 764px){
-  .flexbox{
+@media (max-width: 764px) {
+  .flexbox {
     flex-direction: column;
   }
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.sp-only{
+.sp-only {
   display: none;
 }
 
-@media (max-width:764px){
-  .pc-only{
+@media (max-width: 764px) {
+  .pc-only {
     display: none;
   }
-  .sp-only{
+  .sp-only {
     display: block;
   }
 }
 
 /* layout */
 
-header{
+header {
   background: #fff;
   padding: 20px 0;
 }
 
-header > .flexbox{
+header > .flexbox {
   justify-content: space-between;
   align-items: center;
 }
 
-header h1{
-  margin: 0;
-  height: 40px;
+.logo {
 }
 
-header nav li{
+.logo a {
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav li {
   height: 32px;
   margin-left: 10px;
 }
 
-@media (max-width:1200px){
-  header{
+@media (max-width: 1200px) {
+  header {
     padding: 20px 10px;
   }
-  header h1{
+  header h1 {
     height: 25px;
   }
-  header img{
+  header img {
     width: auto;
     height: 25px;
     vertical-align: top;
   }
-  header > .flexbox{
+  header > .flexbox {
     flex-direction: row;
   }
 }
 
-.global-nav{
-  background: #bc1f29;
+.global-nav {
+  background: #333;
 }
 
-.sp-menu{
+.sp-menu {
   display: none;
 }
 
-@media (min-width:768px){
-  .sp-menu{
+@media (min-width: 768px) {
+  .sp-menu {
     display: none !important;
   }
 }
 
-.sp-menu li a{
+.sp-menu li a {
   display: block;
-  background: #bc1f29;
+  background: #333;
   color: #fff;
   text-decoration: none;
-  border-bottom: solid 1px #8c1717;
+  border-bottom: solid 1px #333;
   padding: 1rem;
   transition: 300ms;
 }
 
-.sp-menu li a:hover{
-  background: #8c1717;
+.sp-menu li a:hover {
+  background: #111;
 }
 
-.sp-menu-social{
+.sp-menu-social {
   text-align: center;
-  background: #bc1f29;
+  background: #333;
   padding: 12px;
   display: flex;
   justify-content: center;
 }
 
-.sp-menu-social a{
+.sp-menu-social a {
   display: block;
   width: 32px;
   height: 32px;
   border-radius: 16px;
-  border: solid 1px #8c1717;
-  background: #8c1717;
+  border: solid 1px #111;
+  background: #111;
   padding: 1px;
   margin: 0 10px;
   transition: 300ms;
 }
 
-.sp-menu-social a:hover{
+.sp-menu-social a:hover {
   transform: scale(1.2);
 }
 
-.sp-menu-social a img{
+.sp-menu-social a img {
   width: 28px;
   height: auto;
 }
 
-main .container{
+main .container {
   background: #fff;
   padding-bottom: 4rem;
 }
 
-main article{
-  padding: 2rem;
+main article {
+  padding: 2rem 0;
 }
 
-.kv img{
+.kv img {
   max-width: 100%;
 }
 
-footer .container{
+footer .container {
   background: #fff;
   text-align: center;
   padding: 1rem 0;
   border-top: solid 1px #eee;
 }
 
-
 /* components */
 
-.global-nav a{
+.global-nav a {
   color: #fff;
   text-decoration: none;
   display: block;
   padding: 12px 20px;
 }
 
-.global-nav a:hover{
-    background: #8c1717;
+.global-nav a:hover {
+  background: #111;
 }
 
-.sub-nav a{
+.sub-nav a {
   display: block;
   width: 32px;
   height: 32px;
-  background: #bc1f29;
+  background: #333;
 }
 
-.sub-nav a:hover{
-  background: #8c1717;
+.sub-nav a:hover {
+  background: #333;
 }
 
-main h2{
-  font-family: serif;
-  text-align: center;
-  color: #8c1717;
+main h2 {
+  color: #333;
   margin-bottom: 2rem;
 }
 
-.table{
-  max-width: 800px;
+.table {
   margin: auto;
 }
 
-.table dt{
+.table dt {
   font-weight: bold;
+  float: left;
+  margin-right: 10px;
 }
 
-.table dt{
+.table dt {
   margin-bottom: 5px;
 }
 
-.table dd{
+.table dd {
   margin-bottom: 10px;
 }
 
-.table a{
-  color: #bc1f29;
+.table a {
+  color: #333;
 }
 
-.table a:hover{
-  color: #8c1717;
+.table a:hover {
+  color: #111;
 }
 
-.card{
+.card {
   flex: 1;
   margin: 10px;
   border: solid 1px #eee;
@@ -228,80 +233,80 @@ main h2{
   overflow: hidden;
 }
 
-.card-img-top{
+.card-img-top {
   width: 100%;
 }
 
-.card-title{
+.card-title {
   margin: 1rem;
 }
 
-.card-text{
+.card-text {
   margin: 0 1rem 1rem;
 }
 
-.card-group{
+.card-group {
   display: flex;
   margin: -10px;
 }
 
-@media (max-width: 764px){
-  .card-group{
+@media (max-width: 764px) {
+  .card-group {
     flex-direction: column;
   }
 }
 
-.btn{
+.btn {
   color: #fff;
   text-decoration: none;
-  background: #bc1f29;
+  background: #333;
   display: inline-block;
   padding: 10px 14px;
   border-radius: 3px;
   margin: 2rem;
 }
 
-.btn:hover{
-  background: #8c1717;
+.btn:hover {
+  background: #111;
 }
 
-@media (max-width: 764px){
-  iframe{
+@media (max-width: 764px) {
+  iframe {
     width: 100%;
     margin-bottom: 1rem;
   }
 }
 
-.menu-btn{
+.menu-btn {
   width: 25px;
   height: 20px;
   border-width: 2px 0 2px;
-  border-color: #bc1f29;
+  border-color: #333;
   border-style: solid;
   position: relative;
   margin-right: 4px;
 }
 
-.menu-btn.open{
+.menu-btn.open {
   border-color: #fff;
 }
 
 .menu-btn::before,
-.menu-btn::after{
+.menu-btn::after {
   display: block;
   content: "";
   width: 25px;
   height: 2px;
   position: absolute;
   top: 7px;
-  background: #bc1f29;
+  background: #333;
   transition: 300ms;
 }
 
-.menu-btn.open::before{
+.menu-btn.open::before {
   transform: rotate(-45deg);
 }
 
-.menu-btn.open::after{
+.menu-btn.open::after {
   transform: rotate(45deg);
 }
